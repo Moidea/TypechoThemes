@@ -1,0 +1,65 @@
+@media only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 240dpi),
+       only screen and (min-resolution: 2dppx),
+       only screen and (min-width: 1900px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: $main-wid) {
+    .logo,
+    .tri,
+    .search,
+    .footer {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav a {
+        margin-right: 1rem;
+    }
+
+    .post {
+        padding: 1.5rem 1rem;
+    }
+
+    article {
+        .post-meta {
+            display: none;
+        }
+        .post-title {
+            padding: 0;
+
+            border: 0 none;
+        }
+    }
+
+    .no-meta {
+        margin-bottom: 1rem;
+    }
+
+    .post-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1rem;
+
+            margin: 1rem 0 .5rem;
+        }
+    }
+}
